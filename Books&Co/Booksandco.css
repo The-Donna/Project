@@ -1,0 +1,41 @@
+body {
+  background-color: #FFFAEC;
+  color: #3D3D3D; 
+  margin: 0;
+}
+
+#nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 5px;
+  background-color: #578E7E; 
+  overflow: hidden;
+}
+
+#nav a {
+  text-decoration: none;
+  color: #F5ECD5; 
+  font-size: 18px;
+  font-family: Georgia, sans-serif, serif;
+}
+
+#nav a:hover {
+  color: #3D3D3D; 
+}
+
+#nav li {
+  display: inline-block;
+  float: right;
+  padding-right: 20px
+}
+
+#nav li.home {
+  float: none;
+  padding: 0;
+}
+
+#nav img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
