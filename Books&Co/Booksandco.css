@@ -39,3 +39,16 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
+#footer {
+  text-decoration: none;
+  color: #F5ECD5; 
+  font-size: 11px;
+  font-family: Georgia, sans-serif, serif;
+  background-color: #578E7E;
+  text-align: center;
+  padding: 5px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
