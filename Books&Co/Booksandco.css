@@ -1,3 +1,11 @@
+html, body {
+  overflow-x: hidden; /* Hide horizontal overflow */
+  width: 100%; /* Ensure full width */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+
 body {
   background-color: #FFFAEC;
   color: #3D3D3D; 
@@ -9,9 +17,7 @@ body {
   margin: 0;
   padding: 20px;
   background-color: #578E7E; 
-  /*overflow: hidden;
-*/
-  }
+}
 
 #nav a {
   text-decoration: none;
@@ -97,7 +103,125 @@ body {
   background-color: #578E7E;
   text-align: center;
   padding: 5px;
-  position: fixed;
   bottom: 0;
   width: 100%;
+}
+
+#bookImages, #movieImages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.random {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.arrows {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.arrow {
+  cursor: pointer;
+  font-size: 24px;
+  user-select: none;
+  transition: color 0.3s;
+}
+
+.arrow:hover {
+  color: #007BFF;
+}
+
+.book-image, .movie-image {
+  width: 200px;
+  height: 300px;
+  border-radius: 10px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.book-link, .movie-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.book-link p, .movie-link p {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.auto-play {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #007BFF;
+  cursor: pointer;
+}
+
+.auto-play:hover {
+  text-decoration: underline;
+}
+
+.start {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  background-image: url('https://img.freepik.com/free-photo/book-composition-with-open-book_23-2147690555.jpg'); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+  width: 100%; 
+  margin: 0; 
+}
+
+.start h1 {
+  font-size: 3.5rem;
+  margin: 0;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); 
+}
+
+.start p {
+  font-size: 1.5rem;
+  margin: 15px 0 0;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.start h1, .start p {
+  position: relative;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+.start h1 {
+  font-size: 2.5rem;
+}
+
+.start p {
+  font-size: 1.2rem;
+}
 }
