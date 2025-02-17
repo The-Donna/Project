@@ -95,6 +95,7 @@ body {
   background-color: #F5ECD5;
 }
 
+
 #footer {
   text-decoration: none;
   color: #F5ECD5; 
@@ -224,4 +225,29 @@ body {
 .start p {
   font-size: 1.2rem;
 }
+
+}
+
+
+#nav form {
+  display: flex;
+  max-width: 300px;
+  margin: 0 auto;
+}
+#nav input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+#nav button {
+  padding: 8px 16px;
+  background-color: #5c67f2;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+#nav button:hover {
+  background-color: #4a54e1;
 }
