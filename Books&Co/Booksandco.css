@@ -267,5 +267,9 @@ body {
   float: right;
   margin-right: 15px;
   background-color: #FFFAEC;
+  border-radius: 25px;
 }
 
+img {
+  border-radius: 25px;
+}
