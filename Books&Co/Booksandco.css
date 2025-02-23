@@ -253,21 +253,23 @@ body {
 }
 
 .display {
-  overflow: hidden;
-  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px
 }
 
 .content {
   font-family: Georgia, sans-serif, serif;
   padding: 2%;
-  margin: 1%;
-  float: left;
-  min-height: 400px;
+  min-height: 300px;
   width: 17%;
-  float: right;
-  margin-right: 15px;
   background-color: #F5ECD5;
   border-radius: 25px;
+  overflow: hidden;
+  text-align: center;
 }
 
 img {
