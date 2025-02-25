@@ -7,7 +7,7 @@ html, body {
 
 
 body {
-  background-color: #FFFAEC;
+  background-color: #F5ECD5;
   color: #3D3D3D; 
   margin: 0;
 }
@@ -264,9 +264,9 @@ body {
 .content {
   font-family: Georgia, sans-serif, serif;
   padding: 2%;
-  min-height: 300px;
+  min-height: 380px;
   width: 17%;
-  background-color: #F5ECD5;
+  background-color: #FFFAEC;
   border-radius: 25px;
   overflow: hidden;
   text-align: center;
