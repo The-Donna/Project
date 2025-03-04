@@ -229,7 +229,7 @@ body {
 }
 
 
-#nav form {
+#search {
   display: flex;
   max-width: 300px;
   margin: 0 auto;
@@ -252,6 +252,11 @@ body {
   background-color: #4a54e1;
 }
 
+#results{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
 .display {
   width: 100%;
   display: flex;

@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" type="text/css" href="Booksandco.css">
-        <script src="Booksandco.js"></script>
+        
         
         <title>Books&Co</title>
 </head>
@@ -32,13 +32,11 @@
                     <li><a href="Contact.html">Contact</a></li>  
                     
         </ul>
-
-        <form action="search" method="get">
-            <input type="text" placeholder="Search..." name="q">
-            <button type="submit">Search</button>
-        
-        
-        </form>
+<div id="search">
+            <input type="text" id="searchBox" placeholder="Search..." name="q">
+            <button type="button" onclick="searchBook()">Search</button>
+        </div>
+       
 
         </div>
 
@@ -69,6 +67,18 @@
                 <!-- Movie images will be inserted here dynamically -->
             </div>
         </div>
+
+            <section class="random">
+            <div class="card" id="bookCard">
+            <h2 class="section-title">Search Results</h2>
+            <div id="randomBookDisplay">
+            <h3 id="randomBookTitle"></h3>
+            <p id="randomBookAuthors"></p>
+            <img id="randomBookThumbnail" src="" alt="">
+            </div>
+            </div>
+            
+        <div id="results"></div>
         </section>
 
         <div id="footer">
@@ -78,5 +88,6 @@
             <p>&#169; 2025 Co. All Rights Reserved.</p>
 
         </div>
+        <script src="Booksandco.js"></script>
 </body>
 </html>
