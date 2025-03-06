@@ -1,8 +1,8 @@
 html, body {
-  overflow-x: hidden; /* Hide horizontal overflow */
-  width: 100%; /* Ensure full width */
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
+  overflow-x: hidden; 
+  width: 100%; 
+  margin: 0; 
+  padding: 0;
 }
 
 

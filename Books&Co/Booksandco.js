@@ -55,15 +55,15 @@ function updateMovieDisplay() {
     `;
 }
 
-// Auto-play functionality
-setInterval(() => showRandomBook('next'), 3000); // Change book every 3 seconds
-setInterval(() => showRandomMovie('next'), 3000); // Change movie every 3 seconds
 
-// Initial display
+setInterval(() => showRandomBook('next'), 3000); 
+setInterval(() => showRandomMovie('next'), 3000); 
+
+
 updateBookDisplay();
 updateMovieDisplay();
 
-const apiKey = 'AIzaSyBrXyc5lfr3wRJR70zr65Kh0tm7fPIU2oM'; // Replace with your actual API key
+const apiKey = 'AIzaSyBrXyc5lfr3wRJR70zr65Kh0tm7fPIU2oM'; 
 
 async function searchBook() {
     const query = document.getElementById('searchBox').value.trim();
@@ -82,7 +82,8 @@ async function searchBook() {
         console.log("API Response:", data);
         books = data.items || [];
         displayResults(books);
-        showRandomBook(); // Call showRandomBook here, after the data is available.
+        showRandomBook(); 
+
     } catch (error) {
         console.error("Error fetching book data:", error);
         document.getElementById('results').innerHTML = `<p style="color:red;">Error fetching book data: ${error.message}</p>`;
@@ -121,6 +122,8 @@ function displayResults(books) {
         resultsDiv.appendChild(bookElement);
         console.log("Book element appended.");
     });
+
+    
 }
 
 setInterval(() => showRandomBook('next'), 3000);
