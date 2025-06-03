@@ -1,4 +1,4 @@
-const apiKey = 'e22c82ab7a9b18ce2cf00b86881824ff'; // Replace this with your TMDB API key
+const apiKey = 'e22c82ab7a9b18ce2cf00b86881824ff'; 
         const maxPages = 500;
         const card = document.getElementById('movie-Card');
 
@@ -29,7 +29,7 @@ const apiKey = 'e22c82ab7a9b18ce2cf00b86881824ff'; // Replace this with your TMD
           
             const movieUrl = `https://www.themoviedb.org/movie/${movie.id}`;
           
-            // 🔥 Save to history
+       
             fetch('/api/history', {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
@@ -59,6 +59,6 @@ const apiKey = 'e22c82ab7a9b18ce2cf00b86881824ff'; // Replace this with your TMD
           }
           
 
-        // Initial call + update every 10 seconds
+  
         getRandomMovie();
         setInterval(getRandomMovie, 10000);
